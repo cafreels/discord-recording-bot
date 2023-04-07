@@ -1,4 +1,6 @@
 const { Configuration, OpenAIApi } = require('openai');
+const config = require('./config.js');
+const fs = require('fs');
 const log = require('npmlog');
 
 const openai_api_key = config.openai_api_key;

@@ -3,9 +3,8 @@ const { SlashCommandBuilder, ChannelType } = require('discord.js');
 const { joinVoiceChannel, EndBehaviorType } = require('@discordjs/voice');
 const { opus } = require('prism-media');
 const util = require('../util.js');
-const config = require('../config.js');
 const fs = require('fs');
-const { transcribe, heyChatGPT } = require('./path/to/your/script');
+const { transcribe, heyChatGPT } = require('../openai.js');
 
 module.exports = {
 	data: new SlashCommandBuilder()
